@@ -14,7 +14,7 @@ app.get("/", function(req, res){ // app is using express to get the root directo
 
 app.post("/", function(req, res){
   console.log(req.body.cityName); // bodyparser will get on post request what data was sent in city name form in the html
-  const apiKey = "58d83457d647a7aa676bd47b49ffc96b"
+  const apiKey = ""
   const query = req.body.cityName;
   const unit = "imperial"
   const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apiKey + "&units=" + unit; //Url for API data
